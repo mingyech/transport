@@ -7,7 +7,6 @@ package udp
 import (
 	"context"
 	"errors"
-	"fmt"
 	"net"
 	"sync"
 	"sync/atomic"
@@ -136,7 +135,6 @@ func (lc *ListenConfig) Listen(network string, laddr *net.UDPAddr) (net.Listener
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println("Listening with reuseport")
 
 	l := &listener{
 		pConn:        conn,
