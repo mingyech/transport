@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pion/transport/v2/deadline"
-	"github.com/pion/transport/v2/packetio"
+	"github.com/mingyech/transport/v2/deadline"
+	"github.com/mingyech/transport/v2/packetio"
 )
 
 const (

@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/transport/v2/test"
+	"github.com/mingyech/transport/v2/test"
 )
 
 var errHandshakeFailed = errors.New("handshake failed")
