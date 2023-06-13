@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/pion/transport/v2"
+	"github.com/mingyech/transport/v2"
 )
 
 const (
