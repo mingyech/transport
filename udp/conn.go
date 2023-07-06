@@ -12,6 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/libp2p/go-reuseport"
 	"github.com/mingyech/transport/v2/deadline"
 	"github.com/mingyech/transport/v2/packetio"
 )
@@ -29,7 +30,7 @@ var (
 
 // listener augments a connection-oriented Listener over a UDP PacketConn
 type listener struct {
-	pConn *net.UDPConn
+	pConn net.PacketConn
 
 	accepting    atomic.Value // bool
 	acceptCh     chan *Conn
@@ -130,7 +131,7 @@ func (lc *ListenConfig) Listen(network string, laddr *net.UDPAddr) (net.Listener
 		lc.Backlog = defaultListenBacklog
 	}
 
-	conn, err := net.ListenUDP(network, laddr)
+	conn, err := reuseport.ListenPacket(network, laddr.String())
 	if err != nil {
 		return nil, err
 	}
