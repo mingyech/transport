@@ -7,7 +7,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/mingyech/transport/v2"
+	"github.com/mingyech/transport"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -8,7 +8,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/mingyech/transport/v2"
+	"github.com/mingyech/transport"
 	"github.com/pion/logging"
 	"github.com/stretchr/testify/assert"
 )

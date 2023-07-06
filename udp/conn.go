@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/libp2p/go-reuseport"
-	"github.com/mingyech/transport/v2/deadline"
-	"github.com/mingyech/transport/v2/packetio"
+	"github.com/mingyech/transport/deadline"
+	"github.com/mingyech/transport/packetio"
 )
 
 const (
