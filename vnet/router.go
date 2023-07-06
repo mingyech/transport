@@ -13,7 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mingyech/transport/v2"
+	"github.com/mingyech/transport"
 	"github.com/pion/logging"
 )
 

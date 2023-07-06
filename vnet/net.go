@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mingyech/transport/v2"
+	"github.com/mingyech/transport"
 )
 
 const (

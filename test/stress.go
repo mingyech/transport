@@ -11,7 +11,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/mingyech/transport/v2/connctx"
+	"github.com/mingyech/transport/connctx"
 )
 
 var errByteSequenceChanged = errors.New("byte sequence changed")
