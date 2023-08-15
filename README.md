@@ -9,9 +9,9 @@
   <a href="https://pion.ly/slack"><img src="https://img.shields.io/badge/join-us%20on%20slack-gray.svg?longCache=true&logo=slack&colorB=brightgreen" alt="Slack Widget"></a>
   <br>
   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/mingyech/transport/test.yaml">
-  <a href="https://pkg.go.dev/github.com/mingyech/transport"><img src="https://pkg.go.dev/badge/github.com/mingyech/transport.svg" alt="Go Reference"></a>
+  <a href="https://pkg.go.dev/github.com/pion/transport/v2"><img src="https://pkg.go.dev/badge/github.com/pion/transport/v2.svg" alt="Go Reference"></a>
   <a href="https://codecov.io/gh/mingyech/transport"><img src="https://codecov.io/gh/mingyech/transport/branch/master/graph/badge.svg" alt="Coverage Status"></a>
-  <a href="https://goreportcard.com/report/github.com/mingyech/transport"><img src="https://goreportcard.com/badge/github.com/mingyech/transport" alt="Go Report Card"></a>
+  <a href="https://goreportcard.com/report/github.com/pion/transport/v2"><img src="https://goreportcard.com/badge/github.com/pion/transport/v2" alt="Go Report Card"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 <br>

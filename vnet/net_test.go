@@ -8,8 +8,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/mingyech/transport"
 	"github.com/pion/logging"
+	"github.com/pion/transport/v2"
 	"github.com/stretchr/testify/assert"
 )
 

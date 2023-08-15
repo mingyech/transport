@@ -10,8 +10,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/mingyech/transport/vnet"
 	"github.com/pion/logging"
+	"github.com/pion/transport/v2/vnet"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 
 	// Create vnet WAN with one endpoint
 	// See the following docs for more information
-	// https://github.com/mingyech/transport/tree/master/vnet#example-wan-with-one-endpoint-vnet
+	// https://github.com/pion/transport/v2/tree/master/vnet#example-wan-with-one-endpoint-vnet
 	router, err := vnet.NewRouter(&vnet.RouterConfig{
 		CIDR:          "0.0.0.0/0",
 		LoggerFactory: logging.NewDefaultLoggerFactory(),
