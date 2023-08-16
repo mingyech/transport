@@ -1,4 +1,4 @@
-module github.com/mingyech/transport
+module github.com/pion/transport/v2
 
 go 1.12
 

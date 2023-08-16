@@ -112,8 +112,8 @@ Net provides 3 interfaces:
 import (
 	"net"
 
-    "github.com/mingyech/transport"
-	"github.com/mingyech/transport/vnet"
+    "github.com/pion/transport/v2"
+	"github.com/pion/transport/v2/vnet"
 	"github.com/pion/logging"
 )
 

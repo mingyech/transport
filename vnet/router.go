@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mingyech/transport"
 	"github.com/pion/logging"
+	"github.com/pion/transport/v2"
 )
 
 const (

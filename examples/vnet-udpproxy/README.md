@@ -22,7 +22,7 @@ go run main.go -address 192.168.1.3:8000
 You should see the following in tcpdump
 
 ```
-sean@SeanLaptop:~/go/src/github.com/mingyech/transport/examples$ sudo tcpdump -i any udp and port 8000
+sean@SeanLaptop:~/go/src/github.com/pion/transport/v2/examples$ sudo tcpdump -i any udp and port 8000
 tcpdump: data link type LINUX_SLL2
 tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
 listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
