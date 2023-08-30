@@ -29,7 +29,7 @@ var (
 
 // listener augments a connection-oriented Listener over a UDP PacketConn
 type listener struct {
-	pConn *net.UDPConn
+	pConn net.PacketConn
 
 	accepting    atomic.Value // bool
 	acceptCh     chan *Conn
@@ -126,13 +126,18 @@ type ListenConfig struct {
 
 // Listen creates a new listener based on the ListenConfig.
 func (lc *ListenConfig) Listen(network string, laddr *net.UDPAddr) (net.Listener, error) {
-	if lc.Backlog == 0 {
-		lc.Backlog = defaultListenBacklog
-	}
-
 	conn, err := net.ListenUDP(network, laddr)
 	if err != nil {
 		return nil, err
+	}
+
+	return lc.NewLisener(conn)
+}
+
+// NewLisener creates a new listener from a PacketConn
+func (lc *ListenConfig) NewLisener(conn net.PacketConn) (net.Listener, error) {
+	if lc.Backlog == 0 {
+		lc.Backlog = defaultListenBacklog
 	}
 
 	l := &listener{
